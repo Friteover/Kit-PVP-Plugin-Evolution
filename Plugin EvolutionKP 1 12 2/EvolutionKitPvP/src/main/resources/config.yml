@@ -1,0 +1,46 @@
+# Configuration Evolution Kit PvP
+
+# Point de spawn de l'arène (défini avec /kitpvp setspawn)
+arena:
+  spawn:
+    world: "world"
+    x: 0.0
+    y: 64.0
+    z: 0.0
+    yaw: 0.0
+    pitch: 0.0
+  enabled: false
+  max-distance: 500  # Distance maximale en blocs avant auto-leave
+
+# Kills requis pour passer au niveau suivant
+kills-per-level:
+  1: 1  # Débutant -> Mineur
+  2: 2  # Mineur -> Guerrier
+  3: 3  # Guerrier -> Champion
+  4: 5  # Champion -> Pyromancien
+  5: 7  # Pyromancien -> Assassin
+  6: 10 # Assassin -> Légende
+  7: 15 # Légende -> Paladin
+  8: 20 # Paladin -> Berserker
+  9: 25 # Berserker -> Mage
+  10: 30 # Mage -> Tank
+  11: 40 # Tank -> Ninja
+
+# Messages personnalisés
+messages:
+  join: "&a✓ Vous avez rejoint l'arène ! &7Bon courage !"
+  leave: "&c✗ Vous avez quitté l'arène."
+  kill: "&a+1 Kill ! &7Progression: &e{progress}%"
+  death: "&c-1 Niveau ! &7Vous êtes redescendu au kit &e{kit}"
+  level-up: "&6⚡ LEVEL UP ! &7Nouveau kit: &e{kit}"
+  killstreak-3: "&e🔥 Killstreak x3 !"
+  killstreak-5: "&6🔥 Killstreak x5 ! Domination !"
+  killstreak-10: "&c🔥 KILLSTREAK x10 ! UNSTOPPABLE !"
+  arena-not-set: "&cL'arène n'est pas encore configurée !"
+
+# Fonctionnalités
+features:
+  scoreboard: true
+  killstreaks: true
+  death-messages: true
+  level-regression: true

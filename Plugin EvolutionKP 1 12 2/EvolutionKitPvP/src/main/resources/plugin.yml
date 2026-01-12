@@ -1,0 +1,25 @@
+name: EvolutionKitPvP
+version: '1.0'
+main: com.evolutionkit.EvolutionKitPvP
+author: Tom
+description: Un plugin Kit PvP unique avec système d'évolution progressive
+
+commands:
+  kitpvp:
+    description: Commandes principales du Kit PvP
+    usage: /<command> [join|leave|stats|reset|setspawn]
+    aliases: [kp, kit]
+
+permissions:
+  evolutionkit.join:
+    description: Permet de rejoindre l'arène
+    default: true
+  evolutionkit.leave:
+    description: Permet de quitter l'arène
+    default: true
+  evolutionkit.stats:
+    description: Permet de voir les statistiques
+    default: true
+  evolutionkit.admin:
+    description: Accès aux commandes administrateur
+    default: op
